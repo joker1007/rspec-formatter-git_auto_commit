@@ -12,9 +12,18 @@ module RSpec
         summary = summary_line(example_count, failure_count, pending_count)
         duration = "in #{format_duration(duration)}"
         commit_message = [state, summary, duration].join(" ")
+
+        unless failed_examples.empty?
+          commit_message << "\n\nFailed Examples:\n\n"
+          failed_examples.each_with_index do |example, index|
+            commit_message << "#{short_padding}#{index.next}) #{example.full_description}\n\n"
+          end
+        end
+
         system("#{GIT_PROG} add -u")
         commit_message << "\n\n"
         commit_message << `#{GIT_PROG} diff --cached`
+
         commit_message << "\n\n"
         commit_message << "File Status:\n"
         commit_message << `#{GIT_PROG} status -s`
