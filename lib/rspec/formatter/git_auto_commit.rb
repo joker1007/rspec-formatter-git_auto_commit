@@ -3,7 +3,7 @@ require "rspec/core/formatters/base_text_formatter"
 module RSpec
   module Formatter
     class GitAutoCommit < RSpec::Core::Formatters::BaseTextFormatter
-      VERSION = "0.0.1"
+      VERSION = "0.0.2"
 
       GIT_PROG = ENV["GIT_BIN"] || "git"
 
