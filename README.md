@@ -1,6 +1,8 @@
 # Rspec::Formatter::GitAutoCommit
 
-Commits your code automatically Every time run RSpec (if file changed).
+Commits your code automatically, Every time run RSpec (if file changed).
+
+This gem is inspired by [guard-notifier-git\_auto\_commit](https://github.com/tomykaira/guard-notifier-git_auto_commit)
 
 Git log example:
 ```
