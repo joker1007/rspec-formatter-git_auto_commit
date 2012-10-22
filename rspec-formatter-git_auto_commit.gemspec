@@ -4,8 +4,8 @@ require File.expand_path('../lib/rspec/formatter/git_auto_commit', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["joker1007"]
   gem.email         = ["kakyoin.hierophant@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{RSpec git auto commit formatter}
+  gem.summary       = %q{RSpec git auto commit formatter}
   gem.homepage      = ""
 
   gem.add_dependency('rspec', '~>2.11.0')

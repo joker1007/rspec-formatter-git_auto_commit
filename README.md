@@ -1,12 +1,19 @@
-# Rspec::Git::Commit::Formatter
+# Rspec::Formatter::GitAutoCommit
 
-TODO: Write a gem description
+Commits your code automatically Every time run RSpec (if file changed).
+
+Git log example:
+```
+efc829c [green] 101 examples, 0 failures in 9.66 seconds
+8ccd44a [red] 79 examples, 61 failures in 19.02 seconds
+6b2d17a [green] 79 examples, 0 failures in 33.43 seconds
+```
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'rspec-git-commit-formatter'
+    gem 'rspec-formatter-git_auto_commit'
 
 And then execute:
 
@@ -14,11 +21,21 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install rspec-git-commit-formatter
+    $ gem install rspec-formatter-git_auto_commit
 
 ## Usage
 
-TODO: Write usage instructions here
+```sh
+rspec --format RSpec::Formatter::GitAutoCommit spec
+```
+
+or
+
+write .rspec.
+```
+--format d
+--format RSpec::Formatter::GitAutoCommit
+```
 
 ## Contributing
 
