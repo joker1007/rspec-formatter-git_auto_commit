@@ -3,8 +3,6 @@ require "rspec/core/formatters/base_text_formatter"
 module RSpec
   module Formatter
     class GitAutoCommit < RSpec::Core::Formatters::BaseTextFormatter
-      VERSION = "0.0.2"
-
       GIT_PROG = ENV["GIT_BIN"] || "git"
 
       def dump_summary(duration, example_count, failure_count, pending_count)

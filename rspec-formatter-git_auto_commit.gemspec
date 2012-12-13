@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-require File.expand_path('../lib/rspec/formatter/git_auto_commit', __FILE__)
+require File.expand_path('../lib/rspec/formatter/git_auto_commit/version', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.authors       = ["joker1007"]
@@ -8,7 +8,7 @@ Gem::Specification.new do |gem|
   gem.summary       = %q{RSpec git auto commit formatter}
   gem.homepage      = "https://github.com/joker1007/rspec-formatter-git_auto_commit"
 
-  gem.add_dependency('rspec', '~>2.11.0')
+  gem.add_dependency('rspec', '~>2.11')
   gem.add_development_dependency('rake')
 
   gem.files         = `git ls-files`.split($\)
