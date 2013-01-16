@@ -5,6 +5,18 @@ module RSpec
     class GitAutoCommit < RSpec::Core::Formatters::BaseTextFormatter
       GIT_PROG = ENV["GIT_BIN"] || "git"
 
+      def message(message)
+      end
+
+      def dump_failures
+      end
+
+      def dump_pending
+      end
+
+      def seed
+      end
+
       def dump_summary(duration, example_count, failure_count, pending_count)
         state = failure_count == 0 ? "[green]" : "[red]"
         summary = summary_line(example_count, failure_count, pending_count)
