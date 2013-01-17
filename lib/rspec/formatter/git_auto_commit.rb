@@ -14,7 +14,7 @@ module RSpec
       def dump_pending
       end
 
-      def seed
+      def seed(number)
       end
 
       def dump_summary(duration, example_count, failure_count, pending_count)
