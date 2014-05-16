@@ -7,6 +7,15 @@ module RSpec
 
       GIT_PROG = ENV["GIT_BIN"] || "git"
 
+      def message(message)
+      end
+
+      def dump_failures(notification)
+      end
+
+      def dump_pending(notification)
+      end
+
       def seed(notification)
       end
 
