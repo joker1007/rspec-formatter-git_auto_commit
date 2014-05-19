@@ -2,6 +2,8 @@
 
 Commits your code automatically, Every time run RSpec (if file changed).
 
+hoge
+
 This gem is inspired by [guard-notifier-git\_auto\_commit](https://github.com/tomykaira/guard-notifier-git_auto_commit)
 
 Git log example:
